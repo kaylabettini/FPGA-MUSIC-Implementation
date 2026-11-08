@@ -1,0 +1,1200 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+Hierarchy Flattening Report for HFMA_4B_1_5_9_13
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdFlattenHierarchy'); else local_onload();}} catch(err) {};">
+<font SIZE="+2" COLOR="#000066">
+Hierarchy Flattening Report for HFMA_4B_1_5_9_13
+</font>
+<br /><br /><br /><script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<a name="List of subsystems:">
+<font size="+1" color="#000066">
+<b class="midprod">
+List of subsystems:
+</b>
+
+</font>
+
+</a>
+<br /><br /><b>
+<li>'FlattenHierarchy' turned 'on':</li>
+</b>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'onList')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span name="onList" id="onList" style="display: none;">
+<ul class="SystemdefinedCollapse" id="93f99e1a-3487-4324-b85a-5e05a42cd2ef" dataCollapse="off">
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:48801\')'})"  name="code2model" class="code2model">
+Subsystem
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:73090\')'})"  name="code2model" class="code2model">
+A Counter
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:73090:7\')'})"  name="code2model" class="code2model">
+Increment
+Real World
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:73090:8\')'})"  name="code2model" class="code2model">
+Wrap To Zero
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:48805\')'})"  name="code2model" class="code2model">
+Bandpass Filter
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:48881\')'})"  name="code2model" class="code2model">
+Bandpass Filter1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:48957\')'})"  name="code2model" class="code2model">
+Bandpass Filter2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:49033\')'})"  name="code2model" class="code2model">
+Bandpass Filter3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:93991\')'})"  name="code2model" class="code2model">
+HFMA1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94000\')'})"  name="code2model" class="code2model">
+A Constant Calculations1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:99481\')'})"  name="code2model" class="code2model">
+Biquad Filter1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:99508\')'})"  name="code2model" class="code2model">
+Biquad Filter2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:99535\')'})"  name="code2model" class="code2model">
+Biquad Filter3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:99562\')'})"  name="code2model" class="code2model">
+Biquad Filter4
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:99589\')'})"  name="code2model" class="code2model">
+Biquad Filter5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:99616\')'})"  name="code2model" class="code2model">
+Biquad Filter6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:99643\')'})"  name="code2model" class="code2model">
+Biquad Filter7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:99670\')'})"  name="code2model" class="code2model">
+Biquad Filter8
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94038\')'})"  name="code2model" class="code2model">
+Compare
+To Constant
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94047\')'})"  name="code2model" class="code2model">
+Covariance Matrix
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94057\')'})"  name="code2model" class="code2model">
+R1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94063\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94071\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94079\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94088\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94099\')'})"  name="code2model" class="code2model">
+R2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94105\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94113\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94121\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94130\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94141\')'})"  name="code2model" class="code2model">
+R21
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94147\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94155\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94163\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94172\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94195\')'})"  name="code2model" class="code2model">
+Hardware Friendly MUSIC Algorithm
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94216\')'})"  name="code2model" class="code2model">
+complex multiplier1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94230\')'})"  name="code2model" class="code2model">
+complex multiplier2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94244\')'})"  name="code2model" class="code2model">
+complex multiplier3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94259\')'})"  name="code2model" class="code2model">
+Q Separation
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94273\')'})"  name="code2model" class="code2model">
+Q Separation1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94287\')'})"  name="code2model" class="code2model">
+Q Separation2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:94301\')'})"  name="code2model" class="code2model">
+Q Separation3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97903\')'})"  name="code2model" class="code2model">
+HFMA13
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97912\')'})"  name="code2model" class="code2model">
+A Constant Calculations1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:100345\')'})"  name="code2model" class="code2model">
+Biquad Filter1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:100372\')'})"  name="code2model" class="code2model">
+Biquad Filter2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:100399\')'})"  name="code2model" class="code2model">
+Biquad Filter3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:100426\')'})"  name="code2model" class="code2model">
+Biquad Filter4
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:100453\')'})"  name="code2model" class="code2model">
+Biquad Filter5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:100480\')'})"  name="code2model" class="code2model">
+Biquad Filter6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:100507\')'})"  name="code2model" class="code2model">
+Biquad Filter7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:100534\')'})"  name="code2model" class="code2model">
+Biquad Filter8
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97950\')'})"  name="code2model" class="code2model">
+Compare
+To Constant
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97959\')'})"  name="code2model" class="code2model">
+Covariance Matrix
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97969\')'})"  name="code2model" class="code2model">
+R1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97975\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97983\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97991\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98000\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98011\')'})"  name="code2model" class="code2model">
+R2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98017\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98025\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98033\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98042\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98053\')'})"  name="code2model" class="code2model">
+R21
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98059\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98067\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98075\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98084\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98107\')'})"  name="code2model" class="code2model">
+Hardware Friendly MUSIC Algorithm
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98128\')'})"  name="code2model" class="code2model">
+complex multiplier1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98142\')'})"  name="code2model" class="code2model">
+complex multiplier2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98156\')'})"  name="code2model" class="code2model">
+complex multiplier3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98171\')'})"  name="code2model" class="code2model">
+Q Separation
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98185\')'})"  name="code2model" class="code2model">
+Q Separation1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98199\')'})"  name="code2model" class="code2model">
+Q Separation2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:98213\')'})"  name="code2model" class="code2model">
+Q Separation3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95295\')'})"  name="code2model" class="code2model">
+HFMA5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95304\')'})"  name="code2model" class="code2model">
+A Constant Calculations1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:101641\')'})"  name="code2model" class="code2model">
+Biquad Filter1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:101668\')'})"  name="code2model" class="code2model">
+Biquad Filter2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:101695\')'})"  name="code2model" class="code2model">
+Biquad Filter3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:101722\')'})"  name="code2model" class="code2model">
+Biquad Filter4
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:101749\')'})"  name="code2model" class="code2model">
+Biquad Filter5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:101776\')'})"  name="code2model" class="code2model">
+Biquad Filter6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:101803\')'})"  name="code2model" class="code2model">
+Biquad Filter7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:101830\')'})"  name="code2model" class="code2model">
+Biquad Filter8
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95342\')'})"  name="code2model" class="code2model">
+Compare
+To Constant
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95351\')'})"  name="code2model" class="code2model">
+Covariance Matrix
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95361\')'})"  name="code2model" class="code2model">
+R1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95367\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95375\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95383\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95392\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95403\')'})"  name="code2model" class="code2model">
+R2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95409\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95417\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95425\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95434\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95445\')'})"  name="code2model" class="code2model">
+R21
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95451\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95459\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95467\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95476\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95499\')'})"  name="code2model" class="code2model">
+Hardware Friendly MUSIC Algorithm
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95520\')'})"  name="code2model" class="code2model">
+complex multiplier1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95534\')'})"  name="code2model" class="code2model">
+complex multiplier2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95548\')'})"  name="code2model" class="code2model">
+complex multiplier3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95563\')'})"  name="code2model" class="code2model">
+Q Separation
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95577\')'})"  name="code2model" class="code2model">
+Q Separation1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95591\')'})"  name="code2model" class="code2model">
+Q Separation2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95605\')'})"  name="code2model" class="code2model">
+Q Separation3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96599\')'})"  name="code2model" class="code2model">
+HFMA9
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96608\')'})"  name="code2model" class="code2model">
+A Constant Calculations1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:102505\')'})"  name="code2model" class="code2model">
+Biquad Filter1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:102532\')'})"  name="code2model" class="code2model">
+Biquad Filter2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:102559\')'})"  name="code2model" class="code2model">
+Biquad Filter3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:102586\')'})"  name="code2model" class="code2model">
+Biquad Filter4
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:102613\')'})"  name="code2model" class="code2model">
+Biquad Filter5
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:102640\')'})"  name="code2model" class="code2model">
+Biquad Filter6
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:102667\')'})"  name="code2model" class="code2model">
+Biquad Filter7
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:102694\')'})"  name="code2model" class="code2model">
+Biquad Filter8
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96646\')'})"  name="code2model" class="code2model">
+Compare
+To Constant
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96655\')'})"  name="code2model" class="code2model">
+Covariance Matrix
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96665\')'})"  name="code2model" class="code2model">
+R1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96671\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96679\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96687\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96696\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96707\')'})"  name="code2model" class="code2model">
+R2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96713\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96721\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96729\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96738\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96749\')'})"  name="code2model" class="code2model">
+R21
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96755\')'})"  name="code2model" class="code2model">
+Leaky Average
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96763\')'})"  name="code2model" class="code2model">
+Leaky Average1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96771\')'})"  name="code2model" class="code2model">
+ac_bd
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96780\')'})"  name="code2model" class="code2model">
+bc_ad
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96803\')'})"  name="code2model" class="code2model">
+Hardware Friendly MUSIC Algorithm
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96824\')'})"  name="code2model" class="code2model">
+complex multiplier1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96838\')'})"  name="code2model" class="code2model">
+complex multiplier2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96852\')'})"  name="code2model" class="code2model">
+complex multiplier3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96867\')'})"  name="code2model" class="code2model">
+Q Separation
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96881\')'})"  name="code2model" class="code2model">
+Q Separation1
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96895\')'})"  name="code2model" class="code2model">
+Q Separation2
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96909\')'})"  name="code2model" class="code2model">
+Q Separation3
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:73091\')'})"  name="code2model" class="code2model">
+IQ Counter
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:73091:7\')'})"  name="code2model" class="code2model">
+Increment
+Real World
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:73091:8\')'})"  name="code2model" class="code2model">
+Wrap To Zero
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:60741\')'})"  name="code2model" class="code2model">
+Max Theta Selector
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:60745\')'})"  name="code2model" class="code2model">
+Compare
+To Constant
+</a>
+
+</li>
+<li>
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:60746\')'})"  name="code2model" class="code2model">
+Compare
+To Constant1
+</a>
+
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '93f99e1a-3487-4324-b85a-5e05a42cd2ef')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><br /><a name="Flattening Status:">
+<font size="+1" color="#000066">
+<b class="midprod">
+Flattening Status:
+</b>
+
+</font>
+
+</a>
+<br /><br />'Hierarchical flattening' was unsuccessful.<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Subsystem
+</b>
+
+</th>
+<th align="center" valign="top" style="border-style: none">
+<b>
+Reason(s)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:93991\')'})"  name="code2model" class="code2model">
+HFMA1
+</a>
+<span style="color:Tomato;">*</span>
+</td>
+<td align="left" valign="top" style="border-style: none">
+<li>SharingFactor '16' is specified on the subsystem. Set SharingFactor to '0' to flatten hierarchy.</li>
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:97903\')'})"  name="code2model" class="code2model">
+HFMA13
+</a>
+<span style="color:Tomato;">*</span>
+</td>
+<td align="left" valign="top" style="border-style: none">
+<li>SharingFactor '16' is specified on the subsystem. Set SharingFactor to '0' to flatten hierarchy.</li>
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:95295\')'})"  name="code2model" class="code2model">
+HFMA5
+</a>
+<span style="color:Tomato;">*</span>
+</td>
+<td align="left" valign="top" style="border-style: none">
+<li>SharingFactor '16' is specified on the subsystem. Set SharingFactor to '0' to flatten hierarchy.</li>
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'coder.internal.code2model(\'HFMA_4B_1_5_9_13:96599\')'})"  name="code2model" class="code2model">
+HFMA9
+</a>
+<span style="color:Tomato;">*</span>
+</td>
+<td align="left" valign="top" style="border-style: none">
+<li>SharingFactor '16' is specified on the subsystem. Set SharingFactor to '0' to flatten hierarchy.</li>
+</td>
+
+</tr>
+
+</table>
+<b>
+<h5 style = "white-space:nowrap;text-align:left;line-height:0px;">Note: Subsystem marked with (*) indicates that even though hierarchy flattening failed, the HDL Code is inlined in a single file instead of getting generated in a separate file.</h5>
+</b>
+<br /><a name="Generated Model">
+<font size="+1" color="#000066">
+<b class="midprod">
+Generated Model
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Generated model after the transformation
+</td>
+<td align="left" valign="top" style="border-style: none">
+<a href="javascript: void(0)" onclick="postParentWindowMessage({message:'legacyMCall', expr:'open_system(\'C:\\Users\\Kayla\\Documents\\THESIS\\hdl_prj\\hdlsrc\\HFMA_4B_1_5_9_13\\gm_HFMA_4B_1_5_9_13\')'})"  class="callMATLAB" name="callMATLAB">gm_HFMA_4B_1_5_9_13</a>
+</td>
+
+</tr>
+
+</table>
+<br />
+<script>function postParentWindowMessage(message) {window.parent.postMessage(message, "*");}
+document.addEventListener('click', function () {postParentWindowMessage({message: 'iframeClick'});});</script>
+</body>
+
+</html>
