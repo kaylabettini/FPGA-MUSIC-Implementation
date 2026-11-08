@@ -1,0 +1,35 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../thesis.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.2"
+    },
+    "design_tree": {
+      "axi_ethernetlite_0": "",
+      "clk_wiz_0": ""
+    },
+    "components": {
+      "axi_ethernetlite_0": {
+        "vlnv": "xilinx.com:ip:axi_ethernetlite:3.0",
+        "ip_revision": "36",
+        "xci_name": "design_1_axi_ethernetlite_0_0",
+        "xci_path": "ip\\design_1_axi_ethernetlite_0_0\\design_1_axi_ethernetlite_0_0.xci",
+        "inst_hier_path": "axi_ethernetlite_0",
+        "has_run_ip_tcl": "true"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "17",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "has_run_ip_tcl": "true"
+      }
+    }
+  }
+}

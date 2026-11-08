@@ -1,0 +1,16 @@
+# Vivado build outputs (regenerated)
+thesis.cache/
+thesis.runs/
+thesis.hw/
+thesis.sim/
+thesis.ip_user_files/
+thesis.gen/
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.*
+
+# Generated IP output products (keep only the .xci)
+thesis.srcs/sources_1/ip/*/*
+!thesis.srcs/sources_1/ip/*/*.xci

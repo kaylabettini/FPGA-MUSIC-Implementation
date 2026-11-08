@@ -1,0 +1,37 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Audio captures
+*.wav
+
+# Vivado generated/build files
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.xpr.lock
+*.jou
+*.log
+*.str
+*.bit
+*.bin
+*.ltx
+*.dcp
+*.rpt
+*.wdb
+*.pb
+*.xml
+*.html
+*.csv
+
+# Optional local/temp
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Your custom folders
+SS/
